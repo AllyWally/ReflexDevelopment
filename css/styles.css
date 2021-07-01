@@ -73,12 +73,18 @@
 }
 
 .content h1{
-    margin: 20px auto;
-    font-size: 70px;
+    font-size: 5em;
+    color: white;
 }
 
 .content p{
-    margin: 20px auto;
     font-weight: 100;
-    line-height: 25px;
+    line-height: 2em;
+    color: white;
+}
+
+@media only screen and (max-width: 375px){
+    .content h1{
+        font-size: 3em;
+    }
 }
