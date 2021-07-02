@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../assets/server.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 /* Navbar */
@@ -60,30 +63,34 @@
 }
 
 .container{
-    width: 100;
-    position: relative;
-}
-
-.content{
-    position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,50%);
+    position: absolute;
+}
+
+.content{
     text-align: center;
 }
 
 .content h1{
+    font-family: Lato;
     font-size: 5em;
     color: white;
 }
 
 .content p{
-    font-weight: 100;
-    line-height: 2em;
+    font-family: Lato;
+    font-size: 1.5em;
     color: white;
 }
 
 @media only screen and (max-width: 375px){
+    .navbar{
+        display: none;
+    }
+
     .content h1{
         font-size: 3em;
     }
