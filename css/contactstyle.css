@@ -18,22 +18,36 @@ body {
     font-family: 'Lato';
 }
 
+h3{
+    color: var(--black);
+}
+
+.contact-ul li{
+    color: var(--black);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.contact-ul li a{
+    margin-left: 10px;
+}
+
 .container{
     margin: auto auto;
-    white-space: nowrap;
+    margin-top: 120px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
 }
 
-.contact-1{
-    display: inline-block;
+.contact-left{
+    float: left;
     width: 50%;
-    height: 100%;
 }
 
-.contact-2{
-    display: inline-block;
+.contact-right{
+    float: right;
     width: 50%;
-    height: 100%;
-
 }
 
 .contact {
@@ -41,11 +55,15 @@ body {
     height: 100;
 }
 
+.contact-right ul{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
 .header {
-    text-align: center;
-    padding: 40px 0;
+    padding-bottom: 20px;
     margin: 0;
-    color: white;
+    color: var(--black);
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -53,6 +71,7 @@ body {
 
 .contact button{
     color: white;
+    font-size: 15px;
     background-color: var(--green);
     padding: 5px 20px;
     margin-top: 15px;
@@ -63,7 +82,7 @@ body {
 
 .contact input, textarea{
     margin-bottom: 10px;
-    border: transparent;
+    border: 1px solid var(--black);
     border-radius: 10px;
     padding: 10px;
     width: 30%;
@@ -71,17 +90,12 @@ body {
 }
 
 .contact textarea {
-    border: transparent;
+    border: 1px solid var(--black);
     border-radius: 10px;
     padding: 10px;
     width: 60%;
     font-family: 'Lato';
     resize: none;
-}
-
-.form-control:focus{
-    border-color: var(--green);
-    
 }
 
 @media only screen and (max-width: 375px){
