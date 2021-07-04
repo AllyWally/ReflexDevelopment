@@ -10,10 +10,57 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
     <body>
+        <div class="mobile-nav">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark px-3 pt-3">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img src="assets/reflex.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </nav>
+        </div>
+        <div class="desktop-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand mx-3" href="/index.html"><img src="assets/reflex.png" width="100px"></a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3">
+                  <a class="nav-link p-0" href="/about.html">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link p-0" href="/products.html">Products</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link p-0" href="/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mx-3 active">
+                  <a class="nav-link p-0" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
         <div class="container mt-5">
-            <div class="card contact-card" style="border-radius: 20px;">
-                <div class="row">
-                    <div class="col-md-6 p-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card p-4 mb-4" style="border-radius: 20px;">
                         <h1>Message</h1>
                         <div class="contact-form">
                             <form action="#" method="POST">
@@ -29,7 +76,9 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6 p-4">                
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4 mb-4" style="border-radius: 20px;">
                         <h1>Contact</h1>
                         <ul class="contact-list">
                             <a href="mailto:info@reflexdevelopment.xyz">
@@ -41,13 +90,13 @@
                             <a href="https://www.instagram.com/reflexdevelopment/" target="_blank">
                                 <li><i class="bi bi-instagram"></i>@reflexdevelopment</li>
                             </a>
-                            <a href="https://twitter.com/reflexdevelopm1" target="_blank">
-                                <li><i class="bi bi-twitter"></i>@reflexdevelopm1</li>
+                            <a href="https://twitter.com/reflexdevelop" target="_blank">
+                                <li><i class="bi bi-twitter"></i>@reflexdevelop</li>
                             </a>
                         </ul>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

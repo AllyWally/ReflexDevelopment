@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root{
-    --mount-meadow: #18dcff;
+    --mount-meadow: #188fff;
     --white-smoke: #f0f0f0;
     --night-rider: #2c2c2c;
     --black: #191b17;
@@ -21,6 +21,15 @@ p,li,a,label{
     color: var(--night-rider);
 }
 
+.nav-item a{
+    padding: 0;
+    color: rgba(255,255,255,.55);
+}
+
+.active a{
+    color: rgba(255,255,255,.75);
+}
+
 /* index.html */
 
 .container-home h1,h2,h3,h4,h5,h6,p{
@@ -28,8 +37,35 @@ p,li,a,label{
 }
 
 .carousel-item{
-    height: 50em;
     background: var(--night-rider);
+}
+
+.carousel-item img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 769px){    
+    .mobile-nav{
+        display: none;
+    }
+    .mobile-home{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-home h1,h2,h3,h4,h5,h6,p{
+        color: var(--black);
+    }
+    
+    .mobile-home h1{
+        color: var(--mount-meadow);
+    }
 }
 
 /* contact.html */
