@@ -27,7 +27,14 @@ p,li,a,label{
 
 .nav-item a{
     padding: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.9px;
     color: rgba(255,255,255,.55);
+    transition: var(--transition);
+}
+.nav-item a:hover{
+    color: lightskyblue!important;
 }
 
 .active a{
@@ -60,38 +67,10 @@ p,li,a,label{
     }
 }
 
+
 /* index.html */
 
-.carousel-item{
-    background: var(--night-rider);
-}
 
-.carousel-item img{
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-caption h3, .carousel-caption p{
-    color: var(--white-smoke);
-}
-
-.service-list{
-    list-style: none;
-    padding: 0;
-}
-
-.service-item{
-    border-left: 3px solid var(--mount-meadow);
-    padding-left: 5px;
-}
-
-.service-item a{
-    text-decoration: none;
-}
-
-.service-item h3{
-    color: var(--mount-meadow);
-}
 
 @media screen and (min-width: 769px){    
     .mobile-nav{
@@ -106,6 +85,44 @@ p,li,a,label{
     .desktop-nav{
         display: none;
     }
+}
+
+.conte{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .conte p {
+    color: white;
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .conte p span.typed-text {
+    font-weight: normal;
+    color: lightskyblue;
+  }  
+  .conte p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .conte p span.cursor.typing {
+      animation: none;
+  }
+  @keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
 /* contact.html */
